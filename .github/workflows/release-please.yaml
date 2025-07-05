@@ -15,7 +15,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
+      - name: Check Conventional Commits
+        uses: cocogitto/cocogitto-action@v3
       - name: Run release-please
         uses: googleapis/release-please-action@v4
         with:
